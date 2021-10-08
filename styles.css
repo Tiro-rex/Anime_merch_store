@@ -1,0 +1,67 @@
+body{
+    box-sizing: border-box;
+}
+.d-flex input{
+    margin: .9em 0em;
+}
+
+.d-flex button{
+    margin:1.5em.6em;
+    padding:.3em 2.4em;
+}
+.containers{
+    background: #0000 url(./assets/39035.jpg);
+    color: rgb(255, 255, 255);
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.color-overlay{
+    width:100%;
+    height: 100%;
+    background:rgb(34, 33, 33) ;
+    opacity: .6;
+    position: absolute;
+}
+h1{
+    font-size: 80px;
+    z-index: 1;
+}
+
+.d-flex table{
+    margin: 1em 10em;
+
+}
+table .btnedit{
+    color:rgb(30, 131, 81);
+    cursor:pointer;
+}
+
+table .btndelete{
+    color:rgb(211, 41, 41);
+    cursor: pointer;
+}
+
+
+.upadatemsg,
+.deletemsg,
+.insertmsg{
+    position:absolute;
+    top: -40px;
+}
+
+.movedown{
+    animation: slideup 3.5s ease;
+}
+
+@keyframes slideup{
+    50%{
+        top:0;
+    }
+    100%{
+        top: -40px;
+    }
+}
